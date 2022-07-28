@@ -1,11 +1,8 @@
 from __future__ import annotations
 from tkinter import *
-from typing import TypeVar
 from Widgets.ABSTRACT import CommonStyles
 
-T = TypeVar('T')
-
-class TLabel(CommonStyles[T]):
+class TLabel(CommonStyles[Label]):
    def __init__(
       self, 
       root: Tk, 

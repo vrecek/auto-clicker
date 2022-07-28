@@ -2,12 +2,10 @@ from __future__ import annotations
 from random import choices
 import string
 from tkinter import *
-from typing import Callable, TypeVar
+from typing import Callable
 from Widgets.ABSTRACT import CommonStyles
 
-T = TypeVar('T')
-
-class TInput(CommonStyles[T]):
+class TInput(CommonStyles[Entry]):
    def __init__(
       self, 
       root: Tk, 

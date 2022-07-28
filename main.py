@@ -18,18 +18,18 @@ app.unfocusUnclick(['input'])
 
 # # # # # # # # # # # # # # # # # # # # # # # WIDGETS # # # # # # # # # # # # # # # # # # # # # # # # # #
 
-titleLabel = TLabel[Label](root, 'AUTO CLICKER', ('Arial', 18, 'bold'), 'royalblue', 'whitesmoke')
+titleLabel = TLabel(root, 'AUTO CLICKER', ('Arial', 18, 'bold'), 'royalblue', 'whitesmoke')
 
-cpsLabel = TLabel[Label](root, 'Clicks per second (min: 1, max: 200)', ('Helvetica', 10, 'bold'), BACKGROUND_COLOR, '#050505')
-cpsInput = TInput[Entry](root, 235, 5, font = ('Helvetica', 9, 'bold'), borderSize = 2, id = 'input-cps')
+cpsLabel = TLabel(root, 'Clicks per second (min: 1, max: 200)', ('Helvetica', 10, 'bold'), BACKGROUND_COLOR, '#050505')
+cpsInput = TInput(root, 235, 5, font = ('Helvetica', 9, 'bold'), borderSize = 2, id = 'input-cps')
 
-keyInput = TInput[Entry](root, 235, 5, font = ('Helvetica', 9, 'bold'), borderSize = 2, id = 'input-key')
-keyLabel = TLabel[Label](root, 'Key activate (default: o)', ('Helvetica', 10, 'bold'), BACKGROUND_COLOR, '#050505')
+keyInput = TInput(root, 235, 5, font = ('Helvetica', 9, 'bold'), borderSize = 2, id = 'input-key')
+keyLabel = TLabel(root, 'Key activate (default: o)', ('Helvetica', 10, 'bold'), BACKGROUND_COLOR, '#050505')
 
-clicksLabel = TLabel[Label](root, 'TOTAL CLICKS: 0', ('Calibri', 10, 'bold'), BACKGROUND_COLOR)
+clicksLabel = TLabel(root, 'TOTAL CLICKS: 0', ('Calibri', 10, 'bold'), BACKGROUND_COLOR)
 
-startBtn = TButton[Button](root, int(WIDTH / 2), 60, 'START', color = '#ffffff', bg = 'royalblue', borderWidth = 0)
-infoLabel = TLabel[Label](root, '*You must toggle the button every change!', ('Arial', 8, 'bold'), BACKGROUND_COLOR, 'red')
+startBtn = TButton(root, int(WIDTH / 2), 60, 'START', color = '#ffffff', bg = 'royalblue', borderWidth = 0)
+infoLabel = TLabel(root, '*You must toggle the button every change!', ('Arial', 8, 'bold'), BACKGROUND_COLOR, 'red')
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
  

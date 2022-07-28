@@ -1,11 +1,9 @@
 from __future__ import annotations
 from tkinter import *
-from typing import Callable, TypeVar
+from typing import Callable
 from Widgets.ABSTRACT import CommonStyles
 
-T = TypeVar('T')
-
-class TButton(CommonStyles[T]):
+class TButton(CommonStyles[Button]):
    def __init__(
       self,
       root: Tk,
